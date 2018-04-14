@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" author="Shivam Pandya">
+      <title>Acme Web Design | Services</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Titan</span> Web Designs</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../">HOME</a></li>
+            <li><a href="about">ABOUT</a></li>
+            <li class="current"><a href="services">SERVICES</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Thank You For Subscribing</h1>
+
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1>Your email has been added to our database.</h1>
+          <h3>You will receive occasional emails from us. You can cancel subscription anytime.</h3>
+        </article>
+
+        <aside id="sidebar">
+            <div class="dark">
+                <h3>Get A Quote</h3>
+                <form class="quote">
+                    <div>
+                        <label>Name</label></br>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <label>Email</label></br>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label>Message</label></br>
+                        <textarea placeholder="Enter Message"></textarea>
+                    </div>
+                    <button type="submit" class="button1">Send</button>
+                </form>
+            </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Titan Web Designs &copy;</p>
+    </footer>
+
+  </body>
+</html>

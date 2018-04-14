@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+      <title>Acme Web Design | Welcome</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Titan</span> Web Designs</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="/">HOME</a></li>
+            <li><a href="about">ABOUT</a></li>
+            <li><a href="services">SERVICES</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Data Analysis</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscriber To Our Newsletter</h1>
+        <form action="/thanks" method="POST">
+          <input type="email" placeholder="Enter Email..." name="email">
+          <button type="submit" class="button1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="{{ url_for("static", filename="plug.png")}}">
+          <h3>SAIDI</h3>
+          <p>SAIDI is the average duration of interruptions per consumers during the year. It is the ratio of the annual duration of interruptions (sustained) to the number of consumers. If duration is specified in minutes, SAIDI is given as consumer minutes. </br> SAIDI = Total duration of sustained interruptions in a year / total number of consumers</p>
+        </div>
+        <div class="box">
+          <img src="{{ url_for("static", filename="light.png")}}">
+          <h3>SAIFI</h3>
+          <p>SAIFI is the average number of sustained interruptions per consumer during the year. It is the ratio of the annual number of interruptions to the number of consumers. </br>SAIFI = (Total number of sustained interruptions in a year) / (Total number of consumers)</p>
+        </div>
+        <div class="box">
+          <img src="{{ url_for("static", filename="switch.png") }}">
+          <h3>MAIFI</h3>
+          <p>MAIFI is the average number of momentary (less than 5 minutes) interruptions per consumer during the year. It is the ratio of the annual number of momentary interruptions to the number of consumers. </br> MAIFI = (Total number of momentary interruptions in a year ) / (Total number of consumers)</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Titan Web Designs &copy;</p>
+    </footer>
+
+  </body>
+</html>

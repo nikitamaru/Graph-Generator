@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" author="Shivam Pandya">
+      <title>Acme Web Design | About</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Titan</span> Web Designs</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../">HOME</a></li>
+            <li class="current"><a href="about">ABOUT</a></li>
+            <li><a href="services">SERVICES</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscriber To Our Newsletter</h1>
+        <form action="/thanks" method="POST">
+          <input type="email" placeholder="Enter Email..." name="email">
+          <button type="submit" class="button1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+            <h1 class="page-title">About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien turpis, scelerisque id metus sed, finibus faucibus ex. Curabitur in sapien metus. Fusce rhoncus dictum feugiat. Nam congue massa ac ante cursus, feugiat mattis ligula placerat. Donec eget tellus venenatis, lacinia turpis at, varius est. Curabitur lacinia, mauris sit amet semper cursus, velit justo interdum purus, et pellentesque dolor neque vitae elit. Suspendisse sit amet luctus felis. Phasellus dapibus id augue sit amet interdum. Nunc tincidunt odio non posuere malesuada. Sed non sapien a nisl molestie ultrices. Maecenas pharetra auctor odio, at mollis quam condimentum ut. Curabitur non dui vitae mi scelerisque rhoncus ut in nisl. Vestibulum sodales tincidunt erat, at semper diam vestibulum vitae.</p>
+
+            <p>Nulla faucibus lacinia interdum. In tincidunt tincidunt rhoncus. Proin condimentum gravida ipsum, rhoncus egestas nisl posuere non. Nullam sodales augue augue, in venenatis nunc euismod vitae. In hac habitasse platea dictumst. Cras vel maximus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra, velit auctor eleifend pulvinar, ligula mauris tempus augue, sed eleifend sapien magna vitae turpis. Integer non lacus ut ligula semper vehicula. Sed at tortor nec libero ultricies luctus ac ac turpis.</p>
+
+        </article>
+
+        <aside id="sidebar">
+            <div class="dark">
+                <h3>What We Do</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien turpis, scelerisque id metus sed, finibus faucibus ex. Curabitur in sapien metus. Fusce rhoncus dictum feugiat. Nam congue massa ac ante cursus, feugiat mattis ligula placerat.</p>
+            </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Titan Web Designs &copy;</p>
+    </footer>
+
+  </body>
+</html>
